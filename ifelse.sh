@@ -1,7 +1,7 @@
 echo "enter command"
 read cmd
-`$cmd` or $(cmd)
-if [$? == 0]
+$cmd
+if [ "$?" == 0 ]
 then
 	echo "command successful"
 else
